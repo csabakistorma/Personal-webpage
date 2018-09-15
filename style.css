@@ -1,0 +1,349 @@
+body {
+	background-image: url(img/background-image.jpg);
+	width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* ======== SIDERBAR ANIMATION =========== */
+#sidebar {
+	position: fixed;
+	width: 35vw;
+	height: 100%;
+	background: hsla(0, 0%, 16%, .9);
+	z-index: 1;
+	left: -35vw;
+	transition: all 300ms linear;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@media (min-width: 768px) {
+	#sidebar {
+	  position: fixed;
+	  width: 30vw;
+	  height: 100%;
+	  background: hsla(0, 0%, 16%, 0.95);
+	  left: -30vw;
+	  transition: all 300ms linear;
+	  font-family: 'Open Sans Condensed', sans-serif;
+  }
+}
+
+@media (min-width: 1024px) {
+	#sidebar {
+	  position: fixed;
+	  width: 20vw;
+	  height: 100%;
+	  background: hsla(0, 0%, 16%, 0.95);
+	  left: -20vw;
+	  transition: all 300ms linear;
+	  font-family: 'Open Sans Condensed', sans-serif;
+  }
+}
+
+#sidebar.active {
+	left: 0vw;
+}
+
+#sidebar ul li {;
+	list-style: none;
+	padding: 0.5rem 0;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	color: rgb(176,176,176);
+}
+
+#sidebar a {
+	color: rgb(176,176,176);
+	text-decoration: none;
+	width: 100%;
+	transition: background-color 1s;
+	display: block;
+  padding: 1rem 0;
+	text-indent: 10%;
+}
+
+#sidebar a:hover {
+	background-color: grey;
+}
+
+
+#sidebar .toggle-btn {
+	position: absolute;
+	left: 36vw;
+	top: 1vh;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	#sidebar .toggle-btn {
+	  position: absolute;
+	  left: 32vw;
+	  top: 1vh; 
+  }
+}
+
+@media (min-width: 1024px) {
+	#sidebar .toggle-btn {
+	  position: absolute;
+	  left: 21vw;
+	  top: 1vh; 
+  }
+}
+
+#sidebar .toggle-btn span {
+	display: block;
+	width: 1.6rem;
+	height: 0.22rem;
+	background: #000;
+	margin: 0.4rem 0;
+}
+
+
+/* ============ HEADER STYLE ============= */
+.links {
+	margin: auto;
+	width: 80%;
+	height: 5vh;
+	text-align: right;
+	padding: 1rem 0.5rem 0 0;
+}
+
+.links ul li {
+	display: inline-block;
+	font-size: 1.25rem;
+	padding: 0 0.5rem 0 0.5rem;
+}
+
+@media (min-width: 1024px) {
+	.links ul li {
+	  display: inline-block;
+	  font-size: 2rem;
+	  padding: 0px 10px 0px 10px;
+  }
+}
+
+
+.links a {
+	text-decoration: none;
+	color: rgb(30,30,30);
+	transition: color 1s;
+}
+
+.links a:hover {
+	color: rgb(176,176,176);
+}
+
+
+
+/* ============ CONTENT STYLE =========== */
+.content, .skills, .contact {
+	margin: 0 auto;
+	width: 80%;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+
+/* ============ PROFILE STYLE ============== */
+.profile {
+	background-image: url(img/personal-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 70vh;
+	color: rgb(176,176,176);
+}
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.9);
+	opacity: .5;
+	height: 70vh;
+}
+
+@media (min-width: 1024px) {
+	.profile, .overlay {
+		height: 100vh;
+	}
+}
+
+.profile h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 15px 0px 15px 0px;
+	text-shadow: 2px 2px #000;
+}
+
+@media (min-width: 1024px) {
+	.profile h1 {
+	  font-size: 3.5rem;
+	  font-weight: bold;
+	  padding: 15px 0px 15px 0px;
+  }
+}
+
+.introduction {
+	padding: 5rem 1rem;
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
+	text-align: center;
+	
+}
+
+@media (min-width: 768px) {
+	.introduction h2 {
+		font-size: 2rem;
+	}
+	
+	.introduction h3 {
+		font-size: 1.875rem;
+	}
+}
+
+
+.profile-image {
+	text-align: center;
+}
+
+.profile-image img {
+	width: 80%;
+	height: auto;
+	padding-top: 10%;
+}
+
+@media (min-width: 1024px) {
+	.profile-image img {
+	  width: 40%;
+	  height: auto;
+	  padding-top: 10%;
+  }
+}
+
+
+
+/* =========== ABOUT ME STYLE ======================= */
+.about {
+	background-color: rgb(240,240,240);
+	letter-spacing: 0.2rem;
+	padding-bottom: 10%;
+	color: rgb(24,24,24);
+	line-height: 1.3rem;
+}
+
+.about h1 {
+	text-align: center;
+	padding: 2rem 0;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.about p {
+	margin: 0 1rem;
+}
+
+
+/* ========== SKILLS STYLE ===================== */
+.skills {
+	background-color: rgb(40,40,40);
+	color: rgb(176,176,176);
+	padding-bottom: 5%;
+}
+
+.skills h1 {
+	text-align: center;
+	padding: 2rem 0;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+hr {
+	width: 85%;
+	margin-top: 10%;
+	border: 0.03rem solid rgb(176,176,176);
+}
+
+
+
+/* =============== CONTACT STYLE ================= */
+.contact {
+	background-color: rgb(240,240,240);
+	letter-spacing: 0.2rem;
+	padding-bottom: 10%;
+	color: rgb(24,24,24);
+}
+
+.contact h1 {
+	text-align: center;
+	padding: 70px 0px 30px 0px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+
+
+/* =============== LOCATION, EMAIL AND PHONE STYLE ================= */
+.location, .email, .phone {
+	text-align: center;
+	padding-bottom: 4rem;
+}
+
+.location i, .email i, .phone i{
+	padding: 1.5rem 0rem 1.5rem 0rem;
+	font-size: 4rem;
+}
+
+.location h2, .email h2, .phone h2 {
+	font-weight: bold;
+}
+
+
+
+/* ================= PERCENT COUNT STYLE =============== */
+.skills h2 {
+	text-align: center;
+	margin-top: 0.5rem;
+	letter-spacing: 0.3rem;
+}
+
+.html-skill, .css-skill, .javascript-skill, .php-skill {
+	padding: 1rem 0 0.5rem 0;
+	text-align: center;
+}
+
+.html-skill p, .css-skill p, .javascript-skill p, .php-skill p {
+	padding: 0.7rem 1.2rem 0.5rem 1.2rem;
+	letter-spacing: 0.3rem;
+}
+
+.html-skill i, .css-skill i, .javascript-skill i, .php-skill i {
+	font-size: 5rem;
+}
+
+.percent-count {
+  font-size: 2.25rem;
+  text-align: center;
+	letter-spacing: 0.3rem;
+	padding-bottom: 5px;
+}
+
+
+
+/* =============== FOOTER STYLE ================= */
+.footer {
+	margin: auto;
+	width: 80%;
+	height: auto;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	background-color: rgb(40,40,40);
+	color: rgb(176,176,176);
+}
+
+.footer p {
+	padding: 1rem 0rem 1rem 0rem;
+}
+
+.footer i {
+	padding: 0 0.2rem 0 0.2rem;
+}
