@@ -245,6 +245,12 @@ hr {
 	color: rgb(24,24,24);
 }
 
+@media (min-width: 768px) {
+	.contact {
+		height: 35vh;
+	}
+}
+
 .contact h1 {
 	text-align: center;
 	padding: 2rem 0;
@@ -263,9 +269,22 @@ hr {
 	padding-bottom: 4rem;
 }
 
+@media (min-width: 768px) {
+	.location, .email, .phone {
+		width: 33%;
+		float: left;
+	}
+}
+
 .location i, .email i, .phone i{
 	padding: 1.5rem 0rem 1.5rem 0rem;
 	font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+	.location i, .email i, .phone i {
+		font-size: 3.125rem;
+	}
 }
 
 .location h2, .email h2, .phone h2 {
@@ -276,13 +295,19 @@ hr {
 
 /* ================= PERCENT COUNT STYLE =============== */
 .skills {
-	height: 200vh;
+	height: 190vh;
 }
 
 @media (min-width: 768px) {
 	.skills {
 	  height: 90vh;
   }
+}
+
+@media (min-width: 1024px) {
+	.skills {
+		height: 50vh;
+	}
 }
 
 .skills h2 {
@@ -303,11 +328,33 @@ hr {
 	}
 }
 
+@media (min-width: 1024px) {
+	.html-skill, .css-skill, .javascript-skill, .php-skill {
+		width: 25%;
+	}
+}
+
 .html-skill p, .css-skill p, .javascript-skill p, .php-skill p {
 	padding: 0.7rem 1.2rem 0.5rem 1.2rem;
 	letter-spacing: 0.1rem;
 }
 
+@media (min-width: 768px) {
+	.html-skill p, .css-skill p, .javascript-skill p, .php-skill p {
+		font-size: 0.875rem;
+		padding-left: 5rem;
+		padding-right: 5rem;
+		height: 5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.html-skill p, .css-skill p, .javascript-skill p, .php-skill p {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		height: 6rem;
+	}
+}
 
 .html-skill i, .css-skill i, .javascript-skill i, .php-skill i {
 	font-size: 5rem;
@@ -323,7 +370,7 @@ hr {
   font-size: 2.25rem;
   text-align: center;
 	letter-spacing: 0.3rem;
-	padding: 1rem 0;
+	padding: 0.5rem 0 0.5 0;
 }
 
 
