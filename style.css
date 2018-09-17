@@ -1,6 +1,6 @@
 body {
 	background-image: url(img/background-image.jpg);
-	width: 100%;
+	background-size: cover;
 	height: auto;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -20,25 +20,15 @@ body {
 
 @media (min-width: 768px) {
 	#sidebar {
-	  position: fixed;
 	  width: 30vw;
-	  height: 100%;
-	  background: hsla(0, 0%, 16%, 0.95);
 	  left: -30vw;
-	  transition: all 300ms linear;
-	  font-family: 'Open Sans Condensed', sans-serif;
   }
 }
 
 @media (min-width: 1024px) {
 	#sidebar {
-	  position: fixed;
 	  width: 20vw;
-	  height: 100%;
-	  background: hsla(0, 0%, 16%, 0.95);
 	  left: -20vw;
-	  transition: all 300ms linear;
-	  font-family: 'Open Sans Condensed', sans-serif;
   }
 }
 
@@ -96,7 +86,7 @@ body {
 #sidebar .toggle-btn span {
 	display: block;
 	width: 1.6rem;
-	height: 0.22rem;
+	height: 2px;
 	background: #000;
 	margin: 0.4rem 0;
 }
@@ -162,15 +152,13 @@ body {
 .profile h1 {
 	font-size: 2rem;
 	font-weight: bold;
-	padding: 15px 0px 15px 0px;
+	padding: 1rem 0 1rem 0;
 	text-shadow: 2px 2px #000;
 }
 
 @media (min-width: 1024px) {
 	.profile h1 {
 	  font-size: 3.5rem;
-	  font-weight: bold;
-	  padding: 15px 0px 15px 0px;
   }
 }
 
@@ -185,6 +173,7 @@ body {
 
 /* =========== ABOUT ME STYLE ======================= */
 .about {
+	text-align: center;
 	background-color: rgb(240,240,240);
 	letter-spacing: 0.1rem;
 	padding-bottom: 10%;
@@ -224,7 +213,7 @@ body {
 }
 
 hr {
-	width: 85%;
+	width: 90%;
 	margin-top: 10%;
 	border: 0.03rem solid rgb(176,176,176);
 }
@@ -279,11 +268,16 @@ hr {
 .location i, .email i, .phone i{
 	padding: 1.5rem 0rem 1.5rem 0rem;
 	font-size: 4rem;
+	transition: color 1s;
 }
 
 @media (min-width: 768px) {
 	.location i, .email i, .phone i {
 		font-size: 3.125rem;
+	}
+	
+	.location i:hover, .email i:hover, .phone i:hover {
+		color: rgb(176,176,176);
 	}
 }
 
@@ -358,11 +352,16 @@ hr {
 
 .html-skill i, .css-skill i, .javascript-skill i, .php-skill i {
 	font-size: 5rem;
+	transition: color 1s;
 }
 
 @media (min-width: 768px) {
 	.html-skill i, .css-skill i, .javascript-skill i, .php-skill i {
 		font-size: 3.125rem;
+	}
+	
+	.html-skill i:hover, .css-skill i:hover, .javascript-skill i:hover, .php-skill i:hover {
+		color: rgb(24,24,24);
 	}
 }
 
@@ -370,7 +369,7 @@ hr {
   font-size: 2.25rem;
   text-align: center;
 	letter-spacing: 0.3rem;
-	padding: 0.5rem 0 0.5 0;
+	padding: 0.5rem 0 0.5rem 0;
 }
 
 
