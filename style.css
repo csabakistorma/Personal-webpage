@@ -1,8 +1,5 @@
 body {
-	background-image: url(img/background-image.jpg);
-	background-size: cover;
-	height: auto;
-	background-repeat: no-repeat;
+	background: url(img/background-image.jpg) no-repeat 70% center/cover;
 	background-attachment: fixed;
 }
 
@@ -189,7 +186,7 @@ body {
 .about h1 {
 	text-align: center;
 	padding: 2rem 0;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: bold;
 }
 
