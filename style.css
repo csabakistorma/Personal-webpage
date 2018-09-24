@@ -38,8 +38,8 @@ body {
 
 #sidebar ul li {
 	list-style: none;
-	padding: 0.5rem 0;
-	font-size: 1rem;
+	padding: 0.5rem 0.5rem;
+	font-size: 2.25rem;
 	text-transform: uppercase;
 	letter-spacing: 0.3rem;
 	color: rgb(176,176,176);
@@ -130,9 +130,8 @@ body {
 
 /* ============ PROFILE STYLE ============== */
 .profile {
-	background-image: url(img/personal-bg.jpg);
+	background: url(img/personal-bg.jpg) no-repeat 30%;
 	background-size: cover;
-	background-repeat: no-repeat;
 	height: 70vh;
 	color: rgb(176,176,176);
 }
@@ -150,7 +149,7 @@ body {
 }
 
 .profile h1 {
-	font-size: 2rem;
+	font-size: 4.375rem;
 	font-weight: bold;
 	padding: 1rem 0 1rem 0;
 	text-shadow: 2px 2px #000;
@@ -162,8 +161,16 @@ body {
   }
 }
 
+.profile h2 {
+	font-size: 2.25rem;
+}
+
+.profile h3 {
+	font-size: 2.5rem;
+}
+
 .introduction {
-	padding: 6rem 1rem;
+	padding: 20rem 1rem;
 	letter-spacing: 0.3rem;
 	text-transform: uppercase;
 	text-align: center;
