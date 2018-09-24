@@ -196,7 +196,7 @@ body {
 .about p {
 	margin: 0 2.5rem;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.3rem;
+	font-size: 2.5rem;
 	text-align: left;
 }
 
@@ -228,6 +228,11 @@ hr {
 	font-weight: bold;
 }
 
+.contact h2 {
+	font-size: 2.25rem;
+	padding: 0.5rem 0.5rem;
+}
+
 .contact p {
 	font-size: 2.5rem;
 }
@@ -242,16 +247,12 @@ hr {
 
 .location i, .email i, .phone i{
 	padding: 1.5rem 0rem 1.5rem 0rem;
-	font-size: 4rem;
+	font-size: 7rem;
 	transition: color 1s;
 }
 
 @media (min-width: 768px) {
-	.location i, .email i, .phone i {
-		font-size: 3.125rem;
-	}
-	
-	.location i:hover, .email i:hover, .phone i:hover {
+    .location i:hover, .email i:hover, .phone i:hover {
 		color: rgb(176,176,176);
 	}
 }
@@ -328,6 +329,7 @@ hr {
 	text-align: center;
 	background-color: rgb(40,40,40);
 	color: rgb(176,176,176);
+	font-size: 2rem;
 }
 
 .footer p {
@@ -335,5 +337,5 @@ hr {
 }
 
 .footer i {
-	padding: 0 0.2rem 0 0.2rem;
+	padding: 0 0.5rem 0 0.5rem;
 }
