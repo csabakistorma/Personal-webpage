@@ -149,7 +149,7 @@ body {
 }
 
 .profile h1 {
-	font-size: 4.375rem;
+	font-size: 4.5rem;
 	font-weight: bold;
 	padding: 1rem 0 1rem 0;
 	text-shadow: 2px 2px #000;
@@ -162,7 +162,7 @@ body {
 }
 
 .profile h2 {
-	font-size: 2.25rem;
+	font-size: 2.5rem;
 }
 
 .profile h3 {
@@ -180,56 +180,34 @@ body {
 
 /* =========== ABOUT ME STYLE ======================= */
 .about {
-	text-align: center;
 	background-color: rgb(240,240,240);
-	letter-spacing: 0.1rem;
 	padding-bottom: 10%;
 	color: rgb(24,24,24);
-	line-height: 1.3rem;
+	line-height: 2.5rem;
 }
 
 .about h1 {
 	text-align: center;
 	padding: 2rem 0;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	font-weight: bold;
 }
 
 .about p {
-	margin: 0 1rem;
-	font-family: 'PT Sans Narrow', sans-serif;
+	margin: 0 2.5rem;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.3rem;
+	text-align: left;
 }
 
 
-/* ========== SKILLS STYLE ===================== */
-.skills {
-	background-color: rgb(40,40,40);
-	color: rgb(176,176,176);
-	padding-bottom: 5%;
-}
-
-.skills h1 {
-	text-align: center;
-	padding: 2rem 0;
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-
-.skills p, .skills h2 {
-	font-family: 'PT Sans Narrow', sans-serif;
-}
-
+/* ========== HR STYLE ===================== */
 hr {
 	width: 90%;
 	margin-top: 10%;
 	border: 0.03rem solid rgb(176,176,176);
 }
 
-@media (min-width: 768px) {
-	hr {
-		display: none;
-	}
-}
 
 
 
@@ -239,23 +217,19 @@ hr {
 	letter-spacing: 0.1rem;
 	padding-bottom: 10%;
 	color: rgb(24,24,24);
+	height: 75%;
 }
 
-@media (min-width: 768px) {
-	.contact {
-		height: 35vh;
-	}
-}
 
 .contact h1 {
 	text-align: center;
 	padding: 2rem 0;
-	font-size: 1.5rem;
+	font-size: 3rem;
 	font-weight: bold;
 }
 
-.contact h2, .contact p {
-	font-family: 'PT Sans Narrow', sans-serif;
+.contact p {
+	font-size: 2.5rem;
 }
 
 
@@ -263,13 +237,7 @@ hr {
 .location, .email, .phone {
 	text-align: center;
 	padding-bottom: 4rem;
-}
-
-@media (min-width: 768px) {
-	.location, .email, .phone {
-		width: 33%;
-		float: left;
-	}
+	width: 100%;
 }
 
 .location i, .email i, .phone i{
@@ -294,27 +262,27 @@ hr {
 
 
 
-/* ================= PERCENT COUNT STYLE =============== */
+/* ================= SKILLS AND PERCENT COUNT STYLE =============== */
 .skills {
-	height: 190vh;
+	background-color: rgb(40,40,40);
+	color: rgb(176,176,176);
+	padding-bottom: 5%;
+	height: 70%;
 }
 
-@media (min-width: 768px) {
-	.skills {
-	  height: 90vh;
-  }
-}
-
-@media (min-width: 1024px) {
-	.skills {
-		height: 50vh;
-	}
+.skills h1 {
+	text-align: center;
+	padding: 2rem 0;
+	font-size: 3rem;
+	font-weight: bold;
 }
 
 .skills h2 {
 	text-align: center;
 	margin-top: 0.5rem;
 	letter-spacing: 0.3rem;
+	font-size: 2.5rem;
+	padding: 1rem 0;
 }
 
 .html-skill, .css-skill, .javascript-skill, .php-skill {
@@ -322,61 +290,31 @@ hr {
 	text-align: center;
 }
 
-@media (min-width: 768px) {
-	.html-skill, .css-skill, .javascript-skill, .php-skill {
-		width: 50%;
-		float: left;
-	}
-}
-
-@media (min-width: 1024px) {
-	.html-skill, .css-skill, .javascript-skill, .php-skill {
-		width: 25%;
-	}
-}
-
 .html-skill p, .css-skill p, .javascript-skill p, .php-skill p {
-	padding: 0.7rem 1.2rem 0.5rem 1.2rem;
+	padding: 0.7rem 4rem 0.5rem 4rem;
 	letter-spacing: 0.1rem;
-}
-
-@media (min-width: 768px) {
-	.html-skill p, .css-skill p, .javascript-skill p, .php-skill p {
-		font-size: 0.875rem;
-		padding-left: 5rem;
-		padding-right: 5rem;
-		height: 5rem;
-	}
-}
-
-@media (min-width: 1024px) {
-	.html-skill p, .css-skill p, .javascript-skill p, .php-skill p {
-		padding-left: 1rem;
-		padding-right: 1rem;
-		height: 6rem;
-	}
+	font-size: 2.5rem;
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
 }
 
 .html-skill i, .css-skill i, .javascript-skill i, .php-skill i {
-	font-size: 5rem;
+	font-size: 7rem;
 	transition: color 1s;
+	padding-top: 1.5rem;
 }
 
 @media (min-width: 768px) {
-	.html-skill i, .css-skill i, .javascript-skill i, .php-skill i {
-		font-size: 3.125rem;
-	}
-	
 	.html-skill i:hover, .css-skill i:hover, .javascript-skill i:hover, .php-skill i:hover {
 		color: rgb(24,24,24);
 	}
 }
 
 .percent-count {
-  font-size: 2.25rem;
-  text-align: center;
+    font-size: 4.5rem;
+    text-align: center;
 	letter-spacing: 0.3rem;
-	padding: 0.5rem 0 0.5rem 0;
+	padding: 1rem 0 0.5rem 0;
 }
 
 
