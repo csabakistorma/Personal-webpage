@@ -15,28 +15,14 @@ body {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
-@media (min-width: 768px) {
-	#sidebar {
-	  width: 30vw;
-	  left: -30vw;
-  }
-}
-
-@media (min-width: 1024px) {
-	#sidebar {
-	  width: 20vw;
-	  left: -20vw;
-  }
-}
-
 #sidebar.active {
 	left: 0vw;
 }
 
 #sidebar ul li {
 	list-style: none;
-	padding: 0.5rem 0.5rem;
-	font-size: 2.25rem;
+	padding: 1rem 0.5rem;
+	font-size: 2.5rem;
 	text-transform: uppercase;
 	letter-spacing: 0.3rem;
 	color: rgb(176,176,176);
@@ -59,25 +45,9 @@ body {
 
 #sidebar .toggle-btn {
 	position: absolute;
-	left: 36vw;
+	left: 37vw;
 	top: 1vh;
 	cursor: pointer;
-}
-
-@media (min-width: 768px) {
-	#sidebar .toggle-btn {
-	  position: absolute;
-	  left: 32vw;
-	  top: 1vh; 
-  }
-}
-
-@media (min-width: 1024px) {
-	#sidebar .toggle-btn {
-	  position: absolute;
-	  left: 21vw;
-	  top: 1vh; 
-  }
 }
 
 #sidebar .toggle-btn span {
@@ -101,7 +71,14 @@ body {
 .links ul li {
 	display: inline-block;
 	font-size: 3rem;
-	padding: 0.5rem 0.5rem 0 0.5rem;
+	padding: 0.5rem 1rem 0 1rem;
+}
+
+@media (min-width: 1080px) and (max-width: 1125px) {
+	.links ul li {
+		padding: 1rem 1rem 0 1rem;
+		font-size: 3.5rem;
+	}
 }
 
 .links a {
@@ -139,23 +116,11 @@ body {
 	height: 70vh;
 }
 
-@media (min-width: 1024px) {
-	.profile, .overlay {
-		height: 100vh;
-	}
-}
-
 .profile h1 {
 	font-size: 4.5rem;
 	font-weight: bold;
 	padding: 1rem 0 1rem 0;
 	text-shadow: 2px 2px #000;
-}
-
-@media (min-width: 1024px) {
-	.profile h1 {
-	  font-size: 3.5rem;
-  }
 }
 
 .profile h2 {
