@@ -21,8 +21,8 @@ body {
 
 #sidebar ul li {
 	list-style: none;
-	padding: 1rem 0.5rem;
-	font-size: 2.5rem;
+	padding: 0.5rem 0.5rem;
+	font-size: 1.125rem;
 	text-transform: uppercase;
 	letter-spacing: 0.3rem;
 	color: rgb(176,176,176);
@@ -34,7 +34,7 @@ body {
 	width: 100%;
 	transition: background-color 1s;
 	display: block;
-    padding: 1rem 0;
+  padding: 1rem 0;
 	text-indent: 10%;
 }
 
@@ -45,17 +45,17 @@ body {
 
 #sidebar .toggle-btn {
 	position: absolute;
-	left: 37vw;
-	top: 1vh;
+	left: 36.5vw;
+	top: 1.5vh;
 	cursor: pointer;
 }
 
 #sidebar .toggle-btn span {
 	display: block;
-	width: 3.5rem;
+	width: 25px;
 	height: 3px;
 	background: #000;
-	margin: 0.8rem 0;
+	margin: 6px 0;
 }
 
 
@@ -70,16 +70,16 @@ body {
 
 .links ul li {
 	display: inline-block;
-	font-size: 3rem;
-	padding: 0.5rem 1rem 0 1rem;
+	font-size: 1.25rem;
+	padding: 0 0.7rem 0 0.7rem;
 }
 
-@media (min-width: 1080px) and (max-width: 1125px) {
+@media (min-width: 320px) and (max-width: 360px) {
 	.links ul li {
-		padding: 1rem 1rem 0 1rem;
-		font-size: 3.5rem;
+		padding: 0 0.5rem 0 0.5rem;
 	}
 }
+
 
 .links a {
 	text-decoration: none;
@@ -117,22 +117,22 @@ body {
 }
 
 .profile h1 {
-	font-size: 4.5rem;
+	font-size: 2.5rem;
 	font-weight: bold;
 	padding: 1rem 0 1rem 0;
 	text-shadow: 2px 2px #000;
 }
 
 .profile h2 {
-	font-size: 2.5rem;
+	font-size: 1.375rem;
 }
 
 .profile h3 {
-	font-size: 2.5rem;
+	font-size: 1.125rem;
 }
 
 .introduction {
-	padding: 20rem 1rem;
+	padding: 4rem 1rem;
 	letter-spacing: 0.3rem;
 	text-transform: uppercase;
 	text-align: center;
@@ -145,20 +145,20 @@ body {
 	background-color: rgb(240,240,240);
 	padding-bottom: 10%;
 	color: rgb(24,24,24);
-	line-height: 2.5rem;
+	line-height: 1.2rem;
 }
 
 .about h1 {
 	text-align: center;
 	padding: 2rem 0;
-	font-size: 3rem;
+	font-size: 1.625rem;
 	font-weight: bold;
 }
 
 .about p {
-	margin: 0 2.5rem;
+	margin: 0 1rem;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 2.5rem;
+	font-size: 1rem;
 	text-align: left;
 }
 
@@ -186,17 +186,17 @@ hr {
 .contact h1 {
 	text-align: center;
 	padding: 2rem 0;
-	font-size: 3rem;
+	font-size: 1.625rem;
 	font-weight: bold;
 }
 
 .contact h2 {
-	font-size: 2.25rem;
+	font-size: 1.5rem;
 	padding: 0.5rem 0.5rem;
 }
 
 .contact p {
-	font-size: 2.5rem;
+	font-size: 1rem;
 }
 
 
@@ -208,8 +208,8 @@ hr {
 }
 
 .location i, .email i, .phone i{
-	padding: 1.5rem 0rem 1.5rem 0rem;
-	font-size: 7rem;
+	padding: 1rem 0rem 1rem 0rem;
+	font-size: 3rem;
 	transition: color 1s;
 }
 
@@ -236,7 +236,7 @@ hr {
 .skills h1 {
 	text-align: center;
 	padding: 2rem 0;
-	font-size: 3rem;
+	font-size: 1.625rem;
 	font-weight: bold;
 }
 
@@ -244,25 +244,30 @@ hr {
 	text-align: center;
 	margin-top: 0.5rem;
 	letter-spacing: 0.3rem;
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	padding: 1rem 0;
 }
 
 .html-skill, .css-skill, .javascript-skill, .php-skill {
 	padding: 1rem 0 0.5rem 0;
 	text-align: center;
+	border-bottom: 1px solid grey;
+}
+
+.skills-no-border {
+	border: none;
 }
 
 .html-skill p, .css-skill p, .javascript-skill p, .php-skill p {
-	padding: 0.7rem 4rem 0.5rem 4rem;
+	padding: 0.7rem 1rem 0.5rem 1rem;
 	letter-spacing: 0.1rem;
-	font-size: 2.5rem;
+	font-size: 1rem;
 	font-family: 'Montserrat', sans-serif;
 	text-align: left;
 }
 
 .html-skill i, .css-skill i, .javascript-skill i, .php-skill i {
-	font-size: 7rem;
+	font-size: 3rem;
 	transition: color 1s;
 	padding-top: 1.5rem;
 }
@@ -274,8 +279,8 @@ hr {
 }
 
 .percent-count {
-    font-size: 4.5rem;
-    text-align: center;
+  font-size: 1.625rem;
+  text-align: center;
 	letter-spacing: 0.3rem;
 	padding: 1rem 0 0.5rem 0;
 }
@@ -291,7 +296,7 @@ hr {
 	text-align: center;
 	background-color: rgb(40,40,40);
 	color: rgb(176,176,176);
-	font-size: 2rem;
+	font-size: 1rem;
 }
 
 .footer p {
