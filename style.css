@@ -28,6 +28,12 @@ body {
 	color: rgb(176,176,176);
 }
 
+@media (min-width: 1024px) {
+	#sidebar ul li {
+		font-size: 1.5rem;
+	}
+}
+
 #sidebar a {
 	color: rgb(176,176,176);
 	text-decoration: none;
@@ -46,7 +52,7 @@ body {
 #sidebar .toggle-btn {
 	position: absolute;
 	left: 36.5vw;
-	top: 1.5vh;
+	top: 1.8vh;
 	cursor: pointer;
 }
 
@@ -55,9 +61,36 @@ body {
 	width: 25px;
 	height: 3px;
 	background: #000;
-	margin: 6px 0;
+	margin: 4px 0;
 }
 
+@media (min-width: 320px) {
+	#sidebar .toggle-btn {
+		left: 36vw;
+	}
+}
+
+@media (min-width: 768px) {
+	#sidebar .toggle-btn {
+		left: 37.5vw;
+	}
+	
+	#sidebar .toggle-btn span {
+		width: 35px;
+		margin: 6px 0;
+	}
+}
+
+@media (min-width: 1024px) {
+	#sidebar .toggle-btn span {
+		width: 45px;
+		margin: 10px 0;
+	}
+	
+	#sidebar .toggle-btn {
+		top: 1vh;
+	}
+}
 
 /* ============ HEADER STYLE ============= */
 .links {
@@ -76,10 +109,24 @@ body {
 
 @media (min-width: 320px) and (max-width: 360px) {
 	.links ul li {
-		padding: 0 0.5rem 0 0.5rem;
+		padding: 0 0.3rem 0 0.3rem;
 	}
 }
 
+
+@media (min-width: 768px) {
+	.links ul li {
+		padding: 0.5rem 0.7rem 0 0.7rem;
+		font-size: 1.375rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.links ul li {
+		padding: 0.5rem 0.8rem 0 0.8rem;
+		font-size: 1.75rem;
+	}
+}
 
 .links a {
 	text-decoration: none;
@@ -149,6 +196,39 @@ body {
 	}
 }
 
+@media (min-width: 768px) {
+	.introduction {
+		padding: 4rem 1rem;
+	}
+	
+	.profile h2 {
+	font-size: 1.375rem;
+  }
+	
+	.profile h3 {
+		font-size: 1.25rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.introduction {
+		padding: 7rem 1rem;
+	}
+	
+	.profile h1 {
+		font-size: 3.5rem;
+	}
+	
+	.profile h2 {
+	font-size: 2rem;
+  }
+	
+	.profile h3 {
+		font-size: 1.875rem;
+	}
+
+}
+
 
 /* =========== ABOUT ME STYLE ======================= */
 .about {
@@ -172,24 +252,24 @@ body {
 	text-align: left;
 }
 
-
-/* ========== HR STYLE ===================== */
-hr {
-	width: 90%;
-	margin-top: 10%;
-	border: 0.03rem solid rgb(176,176,176);
-}
-
-
-
-
 /* =============== CONTACT STYLE ================= */
 .contact {
 	background-color: rgb(240,240,240);
 	letter-spacing: 0.1rem;
-	padding-bottom: 10%;
+	padding-bottom: 5%;
 	color: rgb(24,24,24);
-	height: 75%;
+}
+
+@media (min-width: 768px) {
+	.contact {
+		height: 57vh;
+	}
+}
+
+@media (min-width: 1024px) {
+	.contact {
+		height: 20vh;
+	}
 }
 
 
@@ -217,6 +297,13 @@ hr {
 	width: 100%;
 }
 
+@media (min-width: 1024px) {
+	.location, .email, .phone {
+		width: 33%;
+		float: left;
+	}
+}
+
 .location i, .email i, .phone i{
 	padding: 1rem 0rem 1rem 0rem;
 	font-size: 3rem;
@@ -239,8 +326,12 @@ hr {
 .skills {
 	background-color: rgb(40,40,40);
 	color: rgb(176,176,176);
-	padding-bottom: 5%;
-	height: 70%;
+}
+
+@media (min-width: 1024px) {
+	.skills {
+		height: 53vh;
+	}
 }
 
 .skills h1 {
@@ -248,6 +339,12 @@ hr {
 	padding: 2rem 0 0 0;
 	font-size: 1.625rem;
 	font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+	.skills h1 {
+		padding: 2rem 0;
+	}
 }
 
 .skills h2 {
@@ -264,8 +361,24 @@ hr {
 	border-bottom: 1px solid grey;
 }
 
+@media (min-width: 1024px) {
+	.html-skill, .css-skill, .javascript-skill, .php-skill {
+		width: 48%;
+		float: left;
+		height: 20vh;
+		border: 1px solid grey;
+		margin: 0 0 1% 1%;
+	}
+}
+
 .skills-no-border {
 	border: none;
+}
+
+@media (min-width: 1024px) {
+	.skills-no-border {
+		border: 1px solid grey;
+	}
 }
 
 .html-skill p, .css-skill p, .javascript-skill p, .php-skill p {
