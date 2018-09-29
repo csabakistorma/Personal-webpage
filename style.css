@@ -213,7 +213,7 @@ hr {
 /* =============== LOCATION, EMAIL AND PHONE STYLE ================= */
 .location, .email, .phone {
 	text-align: center;
-	padding-bottom: 4rem;
+	padding-bottom: 2rem;
 	width: 100%;
 }
 
@@ -245,7 +245,7 @@ hr {
 
 .skills h1 {
 	text-align: center;
-	padding: 2rem 0;
+	padding: 2rem 0 0 0;
 	font-size: 1.625rem;
 	font-weight: bold;
 }
