@@ -15,6 +15,13 @@ body {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
+@media (min-width: 1280px) {
+	#sidebar {
+		width: 25vw;
+		left: -25vw;
+	}
+}
+
 #sidebar.active {
 	left: 0vw;
 }
@@ -92,6 +99,12 @@ body {
 	}
 }
 
+@media (min-width: 1280px) {
+	#sidebar .toggle-btn {
+		left: 26vw;
+	}
+}
+
 /* ============ HEADER STYLE ============= */
 .links {
 	margin: auto;
@@ -147,8 +160,10 @@ body {
 	transition: color 1s;
 }
 
-.links a:hover {
-	color: rgb(176,176,176);
+@media (min-width: 768px) {
+  .links a:hover {
+	  color: rgb(176,176,176);
+  }
 }
 
 
@@ -240,6 +255,16 @@ body {
 		font-size: 1.875rem;
 	}
 
+}
+
+@media (min-width: 1280px) {
+	.introduction {
+		padding: 10rem 1rem;
+	}
+	
+	.profile h2 {
+	  font-size: 1.875rem;
+  }
 }
 
 
@@ -365,6 +390,12 @@ body {
 	}
 }
 
+@media (min-width: 1366px) {
+	.skills {
+		height: 110vh;
+	}
+}
+
 .skills h1 {
 	text-align: center;
 	padding: 2rem 0 0 0;
@@ -404,7 +435,13 @@ body {
 
 @media (min-width: 1024px) and (orientation: landscape) {
 	.html-skill, .css-skill, .javascript-skill, .php-skill {
-		height: 35vh
+		height: 35vh;
+	}
+}
+
+@media (min-width: 1366px) {
+	.html-skill, .css-skill, .javascript-skill, .php-skill {
+		height: 40vh;
 	}
 }
 
