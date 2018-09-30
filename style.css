@@ -262,7 +262,7 @@ body {
 	margin: 0 1rem;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
-	text-align: left;
+	text-align: center;
 }
 
 /* =============== CONTACT STYLE ================= */
@@ -423,7 +423,7 @@ body {
 	letter-spacing: 0.1rem;
 	font-size: 1rem;
 	font-family: 'Montserrat', sans-serif;
-	text-align: left;
+	text-align: center;
 }
 
 .html-skill i, .css-skill i, .javascript-skill i, .php-skill i {
