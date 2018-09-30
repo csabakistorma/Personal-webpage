@@ -101,6 +101,19 @@ body {
 	padding: 1rem 0.5rem 0 0;
 }
 
+@media (min-width: 568px) and (max-width: 823px) and (orientation: landscape) {
+	.links {
+		height: 9vh;
+	}
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .links {
+		height: 7vh;
+	}
+}
+
+
 .links ul li {
 	display: inline-block;
 	font-size: 1.25rem;
@@ -272,6 +285,18 @@ body {
 	}
 }
 
+@media (min-width: 812px) and (orientation: landscape) {
+	.contact {
+		height: 150vh;
+	}
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+	.contact {
+		height: 35vh;
+	}
+}
+
 
 .contact h1 {
 	text-align: center;
@@ -334,6 +359,12 @@ body {
 	}
 }
 
+@media (min-width: 1024px) and (orientation: landscape) {
+	.skills {
+		height: 95vh;
+	}
+}
+
 .skills h1 {
 	text-align: center;
 	padding: 2rem 0 0 0;
@@ -368,6 +399,12 @@ body {
 		height: 20vh;
 		border: 1px solid grey;
 		margin: 0 0 1% 1%;
+	}
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+	.html-skill, .css-skill, .javascript-skill, .php-skill {
+		height: 35vh
 	}
 }
 
