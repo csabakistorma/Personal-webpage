@@ -281,6 +281,7 @@ body {
 	padding: 2rem 0;
 	font-size: 1.625rem;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .about p {
@@ -289,6 +290,7 @@ body {
 	font-size: 1rem;
 	text-align: center;
 }
+
 
 /* =============== CONTACT STYLE ================= */
 .contact {
@@ -328,10 +330,12 @@ body {
 	padding: 2rem 0;
 	font-size: 1.625rem;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
-.contact h2 {
-	font-size: 1.5rem;
+.contact span {
+	display: block;
+	font-size: 2rem;
 	padding: 0.5rem 0.5rem;
 }
 
@@ -345,6 +349,10 @@ body {
 	text-align: center;
 	padding-bottom: 2rem;
 	width: 100%;
+}
+
+.email a:link, a:visited {
+	color: rgb(24,24,24);
 }
 
 @media (min-width: 1024px) {
@@ -401,6 +409,7 @@ body {
 	padding: 2rem 0 0 0;
 	font-size: 1.625rem;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 @media (min-width: 1024px) {
@@ -409,12 +418,14 @@ body {
 	}
 }
 
-.skills h2 {
+.skills span {
+	display: block;
 	text-align: center;
 	margin-top: 0.5rem;
 	letter-spacing: 0.3rem;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	padding: 1rem 0;
+	text-transform: uppercase;
 }
 
 .html-skill, .css-skill, .javascript-skill, .php-skill {
