@@ -4,76 +4,60 @@ function toggleSidebar() {
 }
 
 
-// PROGRESSBAR HTML
-function progressHtml() {
-   var percent = document.getElementById('percentCountHtml');
-	var counter = 0;
-	var id = setInterval(frame, 40);
+
+//PERCENT COUNTER
+function myPercentCounter() {
+	var percentCountHtml = document.getElementById('percentCountHtml');
+  var percentCountCss = document.getElementById('percentCountCss');
+  var percentCountJs = document.getElementById('percentCountJs');
+  var percentCountPhp = document.getElementById('percentCountPhp');
 	
-	function frame() {
-    if (counter === 75) {
-      clearInterval(id);
+	// Minden elemhez külön számlálót rendelünk
+	var counterHtml = 0;
+  var counterCss = 0;
+  var counterJs = 0;
+  var counterPhp = 0;
+	
+	var idHtml = setInterval(frameHtml, 40);
+  var idCss = setInterval(frameCss, 40);
+  var idJs = setInterval(frameJs, 40);
+  var idPhp = setInterval(framePhp, 40);
+	
+	function frameHtml() {
+    if (counterHtml === 75) {
+      clearInterval(idHtml);
     } else {
-      counter += 1;
-      percent.innerHTML = counter + '%';
+      counterHtml += 1;
+      percentCountHtml.innerHTML = counterHtml + '%';
     }
   }
-}
-progressHtml();
-
-
-// PROGRESSBAR CSS
-function progressCss() {
- var percent = document.getElementById('percentCountCss');
-	var counter = 0;
-	var id = setInterval(frame, 40);
-	
-	function frame() {
-    if (counter === 75) {
-      clearInterval(id);
+  
+  function frameCss() {
+    if (counterCss === 75) {
+      clearInterval(idCss);
     } else {
-      counter += 1;
-      percent.innerHTML = counter + '%';
+      counterCss += 1;
+      percentCountCss.innerHTML = counterCss + '%';
     }
   }
-}
-progressCss();
-
-
-
-// PROGRESSBAR JAVASCRIPT
-function progressJs() {
-  var percent = document.getElementById('percentCountJs');
-	var counter = 0;
-	var id = setInterval(frame, 40);
 	
-	function frame() {
-    if (counter === 30) {
-      clearInterval(id);
+	function frameJs() {
+    if (counterJs === 30) {
+      clearInterval(idJs);
     } else {
-      counter += 1;
-      percent.innerHTML = counter + '%';
+      counterJs += 1;
+      percentCountJs.innerHTML = counterJs + '%';
     }
   }
-}
-progressJs();
-
-
-
-// PROGRESSBAR PHP
-function progressPhp() {
-  var percent = document.getElementById('percentCountPhp');
-	var counter = 0;
-	var id = setInterval(frame, 40);
-	
-	function frame() {
-    if (counter === 85) {
-      clearInterval(id);
-    } else {
-      counter += 1;
-      percent.innerHTML = counter + '%';
-    }
     
+  function framePhp() {
+    if (counterPhp === 85) {
+      clearInterval(idPhp);
+    } else {
+      counterPhp += 1;
+      percentCountPhp.innerHTML = counterPhp + '%';
+    }
   }
 }
-progressPhp();
+
+myPercentCounter();
